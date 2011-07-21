@@ -6,4 +6,23 @@
  *
  */
 
+(function($)
+{
+    $.fn.jQuizz = function(options)
+    {
+        // default paramaters
+        var defaults =
+        {
+            
+        };
 
+        options = $.extend(defaults, options);
+        
+        //WHERE THE MAGIC TAKES PLACE
+        return this.each(
+            function()
+            {
+            } // end function
+        ); // end return
+    };
+})(jQuery); // pass the jQuery object to the function to avoid conflict with the $ sign.
