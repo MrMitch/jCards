@@ -3,8 +3,8 @@
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <script type="text/javascript" src="../jquery-1.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="../jquery-1.6.2.min.js"></script>
         <script type="text/javascript" src="../jquery.jcards.js"></script>
     </head>
     <body>
@@ -12,6 +12,34 @@
 
         <h1>jCards - animate your cards!</h1>
 
+        <div id="cards_container">
+            
+            <div id="controls">
+                <input id="previous_jcard" type="button" value="&lt; Previous" />
+                <input id="next_jcard" type="button" value="Next &gt;" />
+            </div>
 
+
+            <div id="card3" class="jcard">
+                <h2>Contact</h2>
+                <p>3</p>
+            </div>
+
+            <div id="card2" class="jcard">
+                <h2>Blablabla</h2>
+                <p>2</p>
+            </div>
+            
+            <div id="card1" class="jcard">
+                <h2>Who am I ?</h2>
+                <p>1</p>
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+            $("#cards_container").jCards({v_shift: 30, h_shift: -30});
+        </script>
     </body>
+
 </html>
